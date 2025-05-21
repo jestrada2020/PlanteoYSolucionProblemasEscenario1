@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución de Problemas Matemáticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #0056b3; /* Azul oscuro */
+        }
+        .algoritmo-titulo {
+            color: #d9534f; /* Rojo para el título del algoritmo */
+        }
+        .algoritmo ol li {
+            margin-bottom: 10px;
+        }
+        .algoritmo ol li strong {
+            color: #0056b3; /* Azul para los pasos Primero, Segundo, etc. */
+        }
+        .sugerencia {
+            font-style: italic;
+            color: #555;
+            margin-left: 20px;
+            border-left: 3px solid #f0ad4e; /* Naranja para la sugerencia */
+            padding-left: 10px;
+        }
+        .concepto {
+            background-color: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .ecuacion {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .problema {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .solucion-paso {
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 2px dotted #28a745; /* Verde para los pasos de solución */
+            margin-bottom:15px;
+        }
+        .sub-solucion {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #6c757d; /* Gris para separar sub-soluciones */
+        }
+        .conclusion {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>La Importancia de Plantear y Resolver Problemas</h1>
+        <p>En muchas áreas de la ciencia, ingeniería, economía y la vida cotidiana, nos enfrentamos a situaciones que requieren un análisis cuidadoso y una solución estructurada. Saber cómo plantear un problema en términos matemáticos y luego resolverlo es una habilidad crucial. Esto a menudo implica:</p>
+        <ul>
+            <li><strong>Despejar variables:</strong> Aislar la incógnita que buscamos en una ecuación.</li>
+            <li><strong>Ecuación de la línea recta:</strong> Modelar relaciones lineales entre dos cantidades.</li>
+            <li><strong>Sistemas de ecuaciones:</strong> Resolver problemas con múltiples incógnitas y relaciones.</li>
+            <li><strong>Ecuación cuadrática:</strong> Resolver problemas donde las relaciones no son lineales y pueden tener múltiples soluciones.</li>
+        </ul>
+        <p>Para abordar estos desafíos de manera sistemática, podemos apoyarnos en un algoritmo de resolución de problemas.</p>
+
+        <h2 class="algoritmo-titulo">Algoritmo para resolver un problema:</h2>
+        <div class="algoritmo">
+            <ol>
+                <li><strong>Primero:</strong> Leer el problema mínimo tres veces.</li>
+                <li><strong>Segundo:</strong> Verificar si recuerdas el enunciado del problema.
+                    <p class="sugerencia"><strong>Sugerencia:</strong> Repite el enunciado sin ir al texto donde está escrito el problema.</p>
+                </li>
+                <li><strong>Tercero:</strong> Realizar un esquema (o dibujo) del problema donde se pueda escribir los datos conocidos y los datos por conocer del problema.</li>
+                <li><strong>Cuarto:</strong> Escribir como ecuaciones, las relaciones observadas entre los datos conocidos y por conocer, expresados en el paso tres.</li>
+                <li><strong>Quinto:</strong> Resolver las ecuaciones planteadas en el paso cuarto.</li>
+                <li><strong>Sexto:</strong> Verificar la solución obtenida.</li>
+            </ol>
+        </div>
+
+        <h2>Conceptos Matemáticos Clave</h2>
+
+        <div class="concepto">
+            <h3>1. Despeje de Variables</h3>
+            <p>Despejar una variable significa aislarla en un lado de la ecuación para encontrar su valor. Se utilizan operaciones algebraicas inversas aplicadas a ambos lados de la igualdad.</p>
+            <p>Ejemplo: Si <span class="ecuacion">3y - 7 = 14</span></p>
+            <p>Sumamos 7 a ambos lados: <span class="ecuacion">3y - 7 + 7 = 14 + 7</span> => <span class="ecuacion">3y = 21</span></p>
+            <p>Dividimos por 3 ambos lados: <span class="ecuacion">y = 21 / 3</span> => <span class="ecuacion">y = 7</span></p>
+        </div>
+
+        <div class="concepto">
+            <h3>2. Ecuación de la Línea Recta</h3>
+            <p>Modela una relación lineal entre dos variables (x, y). La forma más común es pendiente-ordenada al origen:</p>
+            <p><span class="ecuacion">y = mx + b</span></p>
+            <p>Donde:
+                <ul>
+                    <li><span class="ecuacion">m</span> es la pendiente (tasa de cambio).</li>
+                    <li><span class="ecuacion">b</span> es la ordenada al origen (valor de y cuando x=0).</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="concepto">
+            <h3>3. Sistemas de Ecuaciones Lineales</h3>
+            <p>Un conjunto de dos o más ecuaciones lineales con múltiples variables. Buscamos valores para las variables que satisfagan todas las ecuaciones simultáneamente. Métodos comunes de solución incluyen sustitución, igualación y reducción.</p>
+            <p>Ejemplo de sistema 2x2:
+                <br><span class="ecuacion">a₁x + b₁y = c₁</span>
+                <br><span class="ecuacion">a₂x + b₂y = c₂</span>
+            </p>
+        </div>
+
+        <div class="concepto">
+            <h3>4. Ecuación Cuadrática</h3>
+            <p>Una ecuación de segundo grado tiene la forma general:</p>
+            <p><span class="ecuacion">ax² + bx + c = 0</span> (donde a ≠ 0)</p>
+            <p>Se puede resolver usando la fórmula cuadrática:</p>
+            <p><span class="ecuacion">x = [-b ± √(b² - 4ac)] / 2a</span></p>
+            <p>O por factorización, si el trinomio es factorizable.</p>
+        </div>
+
+        <h2>Ejemplos de Problemas y Solución Paso a Paso</h2>
+
+        <div class="problema">
+            <h3>Problema 1: Conversión de Temperatura (Despeje de Variable)</h3>
+            <p><strong>Enunciado:</strong> La fórmula para convertir grados Celsius (C) a grados Fahrenheit (F) es <span class="ecuacion">F = (9/5)C + 32</span>. Si la temperatura actual en una ciudad es de 77°F, ¿cuál es la temperatura equivalente en grados Celsius?</p>
+
+            <h4>Aplicando el Algoritmo:</h4>
+            <div class="solucion-paso">
+                <p><strong>Paso 1 y 2: Leer y Recordar el Enunciado</strong></p>
+                <p>Leemos el problema. Se nos da la fórmula de conversión F a C y un valor en °F. Se pide el valor en °C.</p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 3: Esquema y Datos</strong></p>
+                <ul>
+                    <li>Fórmula: <span class="ecuacion">F = (9/5)C + 32</span></li>
+                    <li>Temperatura en Fahrenheit (F): 77°F</li>
+                    <li>Temperatura en Celsius (C): ? (nuestra incógnita)</li>
+                </ul>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 4: Escribir Ecuaciones (Sustituir datos en la fórmula)</strong></p>
+                <p>Sustituimos el valor conocido de F en la fórmula:</p>
+                <p><span class="ecuacion">77 = (9/5)C + 32</span></p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 5: Resolver la Ecuación (Despejar C)</strong></p>
+                <p><span class="ecuacion">77 = (9/5)C + 32</span></p>
+                <p>Restamos 32 de ambos lados:</p>
+                <p><span class="ecuacion">77 - 32 = (9/5)C</span></p>
+                <p><span class="ecuacion">45 = (9/5)C</span></p>
+                <p>Multiplicamos ambos lados por 5:</p>
+                <p><span class="ecuacion">45 * 5 = 9C</span></p>
+                <p><span class="ecuacion">225 = 9C</span></p>
+                <p>Dividimos ambos lados por 9 para despejar C:</p>
+                <p><span class="ecuacion">C = 225 / 9</span></p>
+                <p><span class="ecuacion">C = 25</span></p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 6: Verificar la Solución</strong></p>
+                <p>Sustituimos C=25 en la fórmula original: <span class="ecuacion">F = (9/5)(25) + 32</span></p>
+                <p><span class="ecuacion">F = 9 * 5 + 32</span></p>
+                <p><span class="ecuacion">F = 45 + 32</span></p>
+                <p><span class="ecuacion">F = 77</span></p>
+                <p>La solución es correcta. La temperatura es de 25°C.</p>
+            </div>
+        </div>
+
+
+        <div class="problema">
+            <h3>Problema 2: Problema de Edades (Una ecuación y Sistema de Ecuaciones)</h3>
+            <p><strong>Enunciado:</strong> La edad de María es el triple que la edad de su hijo Pedro. Hace 5 años, la suma de sus edades era de 42 años. ¿Cuáles son las edades actuales de María y Pedro?</p>
+
+            <h4>Aplicando el Algoritmo:</h4>
+            <div class="solucion-paso">
+                <p><strong>Paso 1 y 2: Leer y Recordar el Enunciado</strong></p>
+                <p>Leemos y entendemos las relaciones de edad actuales y pasadas.</p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 3: Esquema y Datos</strong></p>
+                <ul>
+                    <li>Edad actual de Pedro: P</li>
+                    <li>Edad actual de María: M</li>
+                    <li>Relación actual: M = 3P</li>
+                    <li>Hace 5 años: Edad de Pedro = P-5, Edad de María = M-5</li>
+                    <li>Suma de edades hace 5 años: (P-5) + (M-5) = 42</li>
+                </ul>
+            </div>
+
+            <div class="sub-solucion">
+                <h4>Solución con una sola ecuación:</h4>
+                <div class="solucion-paso">
+                    <p><strong>Paso 4 (Una ecuación): Escribir Ecuaciones</strong></p>
+                    <p>Definimos la edad de Pedro como <span class="ecuacion">x</span>.
+                    Entonces, la edad actual de María es <span class="ecuacion">3x</span>.</p>
+                    <p>Hace 5 años:</p>
+                    <ul>
+                        <li>Edad de Pedro: <span class="ecuacion">x - 5</span></li>
+                        <li>Edad de María: <span class="ecuacion">3x - 5</span></li>
+                    </ul>
+                    <p>La suma de sus edades hace 5 años era 42:</p>
+                    <p><span class="ecuacion">(x - 5) + (3x - 5) = 42</span></p>
+                </div>
+                <div class="solucion-paso">
+                    <p><strong>Paso 5 (Una ecuación): Resolver la Ecuación</strong></p>
+                    <p><span class="ecuacion">(x - 5) + (3x - 5) = 42</span></p>
+                    <p><span class="ecuacion">4x - 10 = 42</span></p>
+                    <p>Sumamos 10 a ambos lados:</p>
+                    <p><span class="ecuacion">4x = 52</span></p>
+                    <p>Dividimos por 4:</p>
+                    <p><span class="ecuacion">x = 13</span></p>
+                    <p>Entonces, la edad actual de Pedro es 13 años.</p>
+                    <p>La edad actual de María es <span class="ecuacion">3x = 3 * 13 = 39</span> años.</p>
+                </div>
+                <div class="solucion-paso">
+                    <p><strong>Paso 6 (Una ecuación): Verificar la Solución</strong></p>
+                    <p>Edad actual de Pedro: 13. Edad actual de María: 39. (39 es el triple de 13, correcto).</p>
+                    <p>Hace 5 años: Pedro tenía 13-5=8 años, María tenía 39-5=34 años.</p>
+                    <p>Suma hace 5 años: 8 + 34 = 42. (Correcto).</p>
+                </div>
+            </div>
+
+            <div class="sub-solucion">
+                <h4>Solución con un sistema de ecuaciones:</h4>
+                <div class="solucion-paso">
+                    <p><strong>Paso 4 (Sistema): Escribir Ecuaciones</strong></p>
+                    <p>Sean <span class="ecuacion">M</span> la edad actual de María y <span class="ecuacion">P</span> la edad actual de Pedro.</p>
+                    <p>Ecuación 1 (Relación actual): <span class="ecuacion">M = 3P</span></p>
+                    <p>Ecuación 2 (Suma hace 5 años): <span class="ecuacion">(M - 5) + (P - 5) = 42</span></p>
+                    <p>Simplificando la Ecuación 2: <span class="ecuacion">M + P - 10 = 42</span> => <span class="ecuacion">M + P = 52</span></p>
+                </div>
+                <div class="solucion-paso">
+                    <p><strong>Paso 5 (Sistema): Resolver el Sistema de Ecuaciones</strong></p>
+                    <p>Tenemos el sistema:</p>
+                    <p>1) <span class="ecuacion">M = 3P</span></p>
+                    <p>2) <span class="ecuacion">M + P = 52</span></p>
+                    <p>Sustituimos la Ecuación 1 en la Ecuación 2:</p>
+                    <p><span class="ecuacion">(3P) + P = 52</span></p>
+                    <p><span class="ecuacion">4P = 52</span></p>
+                    <p><span class="ecuacion">P = 52 / 4</span></p>
+                    <p><span class="ecuacion">P = 13</span></p>
+                    <p>Ahora sustituimos el valor de P en la Ecuación 1:</p>
+                    <p><span class="ecuacion">M = 3 * 13</span></p>
+                    <p><span class="ecuacion">M = 39</span></p>
+                    <p>Edad actual de Pedro: 13 años. Edad actual de María: 39 años.</p>
+                </div>
+                 <div class="solucion-paso">
+                    <p><strong>Paso 6 (Sistema): Verificar la Solución</strong></p>
+                    <p>Verificación idéntica a la anterior: Pedro 13, María 39. Hace 5 años, Pedro 8, María 34. Suma 8+34=42. Correcto.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="problema">
+            <h3>Problema 3: Dimensiones de un Terreno (Ecuación Cuadrática)</h3>
+            <p><strong>Enunciado:</strong> Se quiere cercar un terreno rectangular cuya área es de 150 metros cuadrados. Se sabe que el largo del terreno excede a su ancho en 5 metros. ¿Cuáles son las dimensiones del terreno (largo y ancho)?</p>
+
+            <h4>Aplicando el Algoritmo:</h4>
+            <div class="solucion-paso">
+                <p><strong>Paso 1 y 2: Leer y Recordar el Enunciado</strong></p>
+                <p>Comprendemos que es un rectángulo, conocemos el área y la relación entre largo y ancho.</p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 3: Esquema y Datos</strong></p>
+                <p><img src="https://via.placeholder.com/200x100.png?text=Rectángulo+L+x+A" alt="Esquema de rectángulo" style="display:block; margin:10px auto;"></p>
+                <ul>
+                    <li>Ancho (A): <span class="ecuacion">x</span> metros</li>
+                    <li>Largo (L): <span class="ecuacion">x + 5</span> metros (5 metros más que el ancho)</li>
+                    <li>Área (S): 150 m²</li>
+                </ul>
+                <p>Relación: Área de un rectángulo = Largo * Ancho</p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 4: Escribir Ecuaciones</strong></p>
+                <p><span class="ecuacion">S = L * A</span></p>
+                <p>Sustituyendo las expresiones para L y A, y el valor de S:</p>
+                <p><span class="ecuacion">150 = (x + 5) * x</span></p>
+                <p>Expandiendo la ecuación:</p>
+                <p><span class="ecuacion">150 = x² + 5x</span></p>
+                <p>Para resolverla como una ecuación cuadrática, la igualamos a cero:</p>
+                <p><span class="ecuacion">x² + 5x - 150 = 0</span></p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 5: Resolver la Ecuación Cuadrática</strong></p>
+                
+                <div class="sub-solucion">
+                    <h4>Solución usando la Fórmula Cuadrática:</h4>
+                    <p>Usamos la fórmula <span class="ecuacion">x = [-b ± √(b² - 4ac)] / 2a</span></p>
+                    <p>Aquí: <span class="ecuacion">a = 1</span>, <span class="ecuacion">b = 5</span>, <span class="ecuacion">c = -150</span></p>
+                    <p><span class="ecuacion">x = [-5 ± √(5² - 4 * 1 * -150)] / (2 * 1)</span></p>
+                    <p><span class="ecuacion">x = [-5 ± √(25 + 600)] / 2</span></p>
+                    <p><span class="ecuacion">x = [-5 ± √(625)] / 2</span></p>
+                    <p><span class="ecuacion">x = [-5 ± 25] / 2</span></p>
+                    <p>Tenemos dos posibles soluciones para x (el ancho):</p>
+                    <p>Solución 1: <span class="ecuacion">x₁ = (-5 + 25) / 2 = 20 / 2 = 10</span></p>
+                    <p>Solución 2: <span class="ecuacion">x₂ = (-5 - 25) / 2 = -30 / 2 = -15</span></p>
+                    <p>Como el ancho no puede ser negativo, descartamos <span class="ecuacion">x₂ = -15</span>.</p>
+                    <p>Entonces, el ancho (A) es <span class="ecuacion">x = 10</span> metros.</p>
+                    <p>El largo (L) es <span class="ecuacion">x + 5 = 10 + 5 = 15</span> metros.</p>
+                </div>
+
+                <div class="sub-solucion">
+                    <h4>Solución por Factorización:</h4>
+                    <p>Buscamos dos números que multiplicados den -150 y sumados (o restados) den +5.</p>
+                    <p>Los números son +15 y -10. (<span class="ecuacion">15 * -10 = -150</span> y <span class="ecuacion">15 - 10 = 5</span>)</p>
+                    <p>Entonces, la ecuación <span class="ecuacion">x² + 5x - 150 = 0</span> se factoriza como:</p>
+                    <p><span class="ecuacion">(x + 15)(x - 10) = 0</span></p>
+                    <p>Esto nos da dos posibles soluciones:</p>
+                    <p><span class="ecuacion">x + 15 = 0</span> => <span class="ecuacion">x = -15</span></p>
+                    <p><span class="ecuacion">x - 10 = 0</span> => <span class="ecuacion">x = 10</span></p>
+                    <p>Nuevamente, descartamos la solución negativa. El ancho es 10 metros.</p>
+                    <p>El largo es <span class="ecuacion">10 + 5 = 15</span> metros.</p>
+                </div>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 6: Verificar la Solución</strong></p>
+                <p>Dimensiones obtenidas: Ancho = 10 m, Largo = 15 m.</p>
+                <p>¿El largo excede al ancho en 5 metros? Sí, 15 m = 10 m + 5 m.</p>
+                <p>¿El área es 150 m²? Área = Largo * Ancho = 15 m * 10 m = 150 m².</p>
+                <p>La solución es correcta. Las dimensiones del terreno son 10 metros de ancho y 15 metros de largo.</p>
+            </div>
+        </div>
+
+        <div class="problema">
+            <h3>Problema Original 1: Costo de Alquiler de Coche (Línea Recta)</h3>
+            <p><strong>Enunciado:</strong> Una compañía de alquiler de coches cobra una tarifa fija de $50 por día más $0.20 por kilómetro recorrido. Si Juan alquiló un coche por un día y pagó un total de $86, ¿cuántos kilómetros recorrió?</p>
+            <h4>Aplicando el Algoritmo:</h4>
+            <div class="solucion-paso">
+                <p><strong>Paso 1 y 2: Leer y Recordar el Enunciado</strong></p>
+                <p>Leemos el problema varias veces. Entendemos que hay un costo fijo, un costo variable por km, y un costo total. Buscamos los km recorridos.</p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 3: Esquema y Datos</strong></p>
+                <ul>
+                    <li>Tarifa fija (F): $50</li>
+                    <li>Costo por km (Ck): $0.20</li>
+                    <li>Costo total (CT): $86</li>
+                    <li>Kilómetros recorridos (k): ? (nuestra incógnita)</li>
+                </ul>
+                <p>Relación: Costo Total = Tarifa Fija + (Costo por km * Kilómetros)</p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 4: Escribir Ecuaciones</strong></p>
+                <p>Podemos ver que esto se asemeja a una ecuación lineal <span class="ecuacion">y = mx + b</span>, donde <span class="ecuacion">y</span> es el costo total, <span class="ecuacion">x</span> son los kilómetros, <span class="ecuacion">m</span> es el costo por km, y <span class="ecuacion">b</span> es la tarifa fija.</p>
+                <p><span class="ecuacion">CT = Ck * k + F</span></p>
+                <p>Sustituyendo los valores conocidos:</p>
+                <p><span class="ecuacion">86 = 0.20k + 50</span></p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 5: Resolver la Ecuación (Despeje de variable)</strong></p>
+                <p><span class="ecuacion">86 = 0.20k + 50</span></p>
+                <p>Restamos 50 de ambos lados:</p>
+                <p><span class="ecuacion">86 - 50 = 0.20k</span></p>
+                <p><span class="ecuacion">36 = 0.20k</span></p>
+                <p>Dividimos ambos lados por 0.20 para despejar k:</p>
+                <p><span class="ecuacion">k = 36 / 0.20</span></p>
+                <p><span class="ecuacion">k = 180</span></p>
+            </div>
+            <div class="solucion-paso">
+                <p><strong>Paso 6: Verificar la Solución</strong></p>
+                <p>Si Juan recorrió 180 km:</p>
+                <p>Costo por km: 180 km * $0.20/km = $36</p>
+                <p>Costo total: $36 (por km) + $50 (fijo) = $86</p>
+                <p>La solución es correcta. Juan recorrió 180 kilómetros.</p>
+            </div>
+        </div>
+
+
+        <div class="conclusion">
+            <h2>Conclusión</h2>
+            <p>Dominar el despeje de variables, la ecuación de la línea recta, los sistemas de ecuaciones y la ecuación cuadrática, junto con un método estructurado como el algoritmo presentado, te proporciona herramientas poderosas para analizar y resolver una amplia gama de problemas. ¡La práctica constante es clave para afianzar estas habilidades!</p>
+        </div>
+
+    </div>
+</body>
+</html>
